@@ -60,7 +60,6 @@ export class SvgEyeComponent implements OnInit {
 
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(e: MouseEvent) {
-    // console.log(e)
     const xm = e.clientX - this.xo // the normalized x/y coords to work with
     const ym = e.clientY - this.yo
 
