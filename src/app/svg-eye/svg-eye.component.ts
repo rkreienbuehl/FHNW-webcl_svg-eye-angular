@@ -13,7 +13,6 @@ import {
   styleUrls: ['./svg-eye.component.css'],
 })
 export class SvgEyeComponent implements OnInit {
-  @Input() identifier = 'eye'
   @Input() posTop = '0px'
   @Input() posLeft = '0px'
 

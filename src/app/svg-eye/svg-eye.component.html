@@ -1,5 +1,4 @@
 <svg
-  id="{{ identifier }}"
   [ngStyle]="{ top: posTop, left: posLeft }"
   viewBox="0 0 120 120"
   (click)="changeLidState()"
@@ -29,7 +28,7 @@
     <stop offset="90%" stop-color="#8EC0DD" stop-opacity="1" />
     <stop offset="100%" stop-color="#2F3A46" stop-opacity="1" />
   </radialGradient>
-  <g id="{{ identifier }}_iris" #iris>
+  <g #iris>
     <ellipse
       cx="60"
       cy="60"
@@ -48,7 +47,7 @@
       fill-opacity="0.8"
     />
   </g>
-  <g id="{{ identifier }}_openLids">
+  <g>
     <path
       d="M0 60 A60,60 0 0,1 120,60 A60,30 0 0,0 0,60 Z"
       opacity="1"
@@ -63,7 +62,7 @@
       fill-opacity="1"
     />
   </g>
-  <g id="{{ identifier }}_closeLid" #closeLid>
+  <g #closeLid>
     <path
       d="M0 60 A60,60 0 0,1 120,60 A60,40 0 0,1 0,60 Z"
       opacity="1"
